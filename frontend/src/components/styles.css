@@ -1,0 +1,7 @@
+:global(.cs-message) {
+              color: hotpink;
+}
+
+:global(.cs-message--single) {
+              color: hotpink;
+}

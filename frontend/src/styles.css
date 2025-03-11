@@ -1,0 +1,12 @@
+/* :global(.cs-message ) {
+              color: hotpink !important;
+              display: inline-block !important;
+              overflow: auto !important;
+} */
+
+:global(.messageQuery) {
+              color: hotpink !important;
+              display: inline-block !important;
+              overflow: auto !important;
+
+}

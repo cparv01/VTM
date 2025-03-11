@@ -1,0 +1,71 @@
+tbody, td, tfoot, th, thead, tr {
+    border: 0 solid;
+    border-color: inherit;
+    
+  }
+  
+  .table th {
+    font-weight: 600;
+}
+
+*{ box-sizing: border-box; }
+
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text]{
+  width: 20px;
+  color: #525252;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+  transition: width 1s ease;
+  outline: none;
+  
+  &:focus{ width: 300px; }
+}
+
+.social{
+  position: absolute;
+  right: 35px;
+  bottom: 35px;
+  
+  img{
+    display: block;
+    width: 32px;
+  }
+}
+
+
+@keyframes loading {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  border-top-color: #333;
+  animation: loading 1s ease-in-out infinite;
+}
+
+
+
+
+
