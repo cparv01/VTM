@@ -1,140 +1,128 @@
-﻿# Vulnerability Threat Management And Issue Prioritization (VTM)
+# Vulnerability Threat Management And Issue Prioritization (VTM)
 
-A full-stack web application for managing security vulnerabilities, threat assessment, and issue prioritization with AI-powered assistance.
+A **full-stack web application** for managing security vulnerabilities, threat assessment, and issue prioritization with **AI-powered assistance**.
 
-## Table of Contents
-- [Features](#features)
-- [Demo & Screenshots](#demo--screenshots)
-- [Tech Stack](#tech-stack)
+---
+
+## 📜 Table of Contents
+- [🚀 Features](#-features)
+- [🎥 Demo & Screenshots](#-demo--screenshots)
+- [🛠 Tech Stack](#-tech-stack)
   - [Frontend](#frontend)
   - [Backend](#backend)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
+- [📌 Prerequisites](#-prerequisites)
+- [⚙️ Installation](#-installation)
   - [Frontend Setup](#frontend-setup)
   - [Backend Setup](#backend-setup)
-- [Environment Variables](#environment-variables)
-- [API Documentation](#api-documentation)
-- [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
-- [Support](#support)
+- [⚙️ Environment Variables](#-environment-variables)
+- [📄 API Documentation](#-api-documentation)
+- [🛠 Development](#-development)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [📬 Support](#-support)
 
-## Features
+---
 
-- 🔒 Vulnerability tracking and management
-- 🤖 AI-powered chatbot for assistance
-- 📊 Interactive dashboard with analytics
-- 🔔 Real-time notifications
-- 🌓 Dark/Light theme support
-- 📱 Responsive design
-- 🔐 User authentication and authorization
-- 📝 Detailed issue reporting
-- 💬 Interactive chat interface
+## 🚀 Features
+✅ **Vulnerability Tracking & Management**  
+🤖 **AI-powered chatbot for assistance**  
+📊 **Interactive dashboard with analytics**  
+🔔 **Real-time notifications**  
+🌙 **Dark/Light mode support**  
+📱 **Fully responsive design**  
+🔐 **User authentication & authorization**  
+📝 **Detailed issue reporting**  
+💬 **Interactive chat interface**  
 
-## Demo & Screenshots
+---
 
-### Video Demo
-https://drive.google.com/file/d/1ZXSd4aJOdCmfRS-z844lfT00B5ewk15m/preview
+## 🎥 Demo & Screenshots
 
-*Watch our application demo showcasing key features and functionality*
+### 🎬 Video Demo
+▶️ [Watch the demo](https://drive.google.com/file/d/1ZXSd4aJOdCmfRS-z844lfT00B5ewk15m/preview)
 
-### Screenshots
-
-#### Dashboard
+### 📷 Screenshots
+#### 📊 Dashboard
 ![Dashboard](screenshots/dashboard.png)
-*Main dashboard showing vulnerability analytics and metrics*
+*Main dashboard showcasing vulnerability analytics*
 
-#### Issue Management
+#### 📝 Issue Management
 ![Issue Management](screenshots/issues.png)
-*Issue tracking and management interface*
+*Efficient issue tracking & management interface*
 
-#### AI Chatbot
+#### 🤖 AI Chatbot
 ![AI Chatbot](screenshots/chatbot.png)
-*AI-powered chatbot for quick assistance*
+*AI-powered chatbot providing real-time assistance*
 
-#### Dark Theme
+#### 🌙 Dark Mode
 ![Dark Theme](screenshots/dark-theme.png)
-*Application in dark mode*
+*Sleek and modern dark mode interface*
 
-#### Notifications
+#### 🔔 Notifications
 ![Notifications](screenshots/notifications.png)
-*Real-time notification system*
+*Stay updated with real-time alerts*
 
-> Note: Replace `path_to_your_video` and the screenshot paths with actual paths to your media files. You can store these in a `screenshots` or `assets` directory in your repository.
+---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-### Frontend
-- React.js (v18.2.0)
-- Material UI (v5.15.15)
-- React Router (v6.23.0)
-- Bootstrap (v5.3.3)
-- Axios (v1.6.7)
-- React ApexCharts (v1.4.1)
-- Various UI components (React Select, React CSV, etc.)
+### 🌐 Frontend
+- **React.js** (v18.2.0)
+- **Material UI** (v5.15.15)
+- **React Router** (v6.23.0)
+- **Bootstrap** (v5.3.3)
+- **Axios** (v1.6.7)
+- **ApexCharts** (v1.4.1)
 
-### Backend
-- Laravel (v8.54)
-- PHP (^7.3|^8.0)
-- Laravel Sanctum for authentication
-- MySQL/PostgreSQL
-- Guzzle HTTP Client
+### 🔙 Backend
+- **Laravel** (v8.54)
+- **PHP** (^7.3 | ^8.0)
+- **Laravel Sanctum** (Authentication)
+- **MySQL/PostgreSQL**
+- **Guzzle HTTP Client**
 
-## Prerequisites
+---
 
-Before you begin, ensure you have the following installed:
-- Node.js (v16 or higher)
-- PHP (v7.3 or higher)
-- Composer
-- MySQL or PostgreSQL
-- Git
+## 📌 Prerequisites
+Before installation, ensure you have:
+- **Node.js** (v16+)
+- **PHP** (v7.3+)
+- **Composer**
+- **MySQL/PostgreSQL**
+- **Git**
 
-## Installation
+---
 
-### Frontend Setup
+## ⚙️ Installation
+
+### 💻 Frontend Setup
 ```bash
-# Navigate to frontend directory
 cd frontend
-
-# Install dependencies
 npm install
-
-# Create .env file
 cp .env.example .env
-
-# Start development server
 npm start
 ```
 
-### Backend Setup
+### 🖥 Backend Setup
 ```bash
-# Navigate to backend directory
 cd backend
-
-# Install dependencies
 composer install
-
-# Create .env file
 cp .env.example .env
-
-# Generate application key
 php artisan key:generate
-
-# Run migrations
 php artisan migrate
-
-# Start development server
 php artisan serve
 ```
 
-## Environment Variables
+---
 
-### Frontend (.env)
+## ⚙️ Environment Variables
+
+### 📌 Frontend (.env)
 ```
 REACT_APP_API_URL=http://localhost:8000/api
 ```
 
-### Backend (.env)
+### 🔙 Backend (.env)
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -150,13 +138,16 @@ MAIL_USERNAME=your_mail_username
 MAIL_PASSWORD=your_mail_password
 ```
 
-## API Documentation
+---
 
-The API documentation can be accessed at `/api/documentation` after starting the backend server.
+## 📄 API Documentation
+Access API documentation at **`/api/documentation`** after starting the backend server.
 
-## Development
+---
 
-### Running Tests
+## 🛠 Development
+
+### 🧪 Running Tests
 ```bash
 # Frontend tests
 cd frontend
@@ -167,22 +158,27 @@ cd backend
 php artisan test
 ```
 
-### Code Style
-- Frontend follows ESLint configuration
-- Backend follows PSR-12 coding standards
+### 🎨 Code Style
+- **Frontend**: ESLint rules applied
+- **Backend**: Follows PSR-12 standards
 
-## Contributing
+---
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🤝 Contributing
+1. **Fork** the repository
+2. **Create a new branch** (`git checkout -b feature/NewFeature`)
+3. **Commit your changes** (`git commit -m 'Add NewFeature'`)
+4. **Push the branch** (`git push origin feature/NewFeature`)
+5. **Submit a Pull Request** 🚀
 
-## License
+---
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📜 License
+This project is licensed under the **MIT License** - see the LICENSE file for details.
 
-## Support
+---
 
-For support, please open an issue in the GitHub repository or contact the development team.
+## 📬 Support
+For support, please open an **issue** in the repository or contact the development team.
+
+---
